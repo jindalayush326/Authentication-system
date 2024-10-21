@@ -1,0 +1,10 @@
+{% extends 'layouts/app.html' %}
+
+{% block content %}
+
+<h2>Profile</h2>
+<p>Username: {{ user.username }}</p>
+<p>Date Joined: {{ user.date_joined }}</p>
+<a href="{% url 'dashboard' %}">Back to Dashboard</a>
+
+{% endblock %}
